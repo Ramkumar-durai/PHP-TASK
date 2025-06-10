@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-book-open me-2"></i>My Blog
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn" title="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h1 class="display-4 mb-3">Welcome to My Blog</h1>
+                <p class="lead text-muted">Discover the latest insights and stories from our community</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Blog Posts -->
+        <div class="row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-6 col-lg-4 mb-4 fade-in">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="https://picsum.photos/600/400" class="card-img-top" alt="Blog Post Image">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-primary">Technology</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Getting Started with Web Development</h5>
+                        <p class="card-text">Learn the fundamentals of web development and start your journey as a developer...</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="btn btn-primary read-more" data-bs-toggle="modal" data-bs-target="#postModal1">
+                                <i class="fas fa-arrow-right me-2"></i>Read More
+                            </button>
+                            <small class="text-muted">
+                                <i class="far fa-clock me-1"></i>5 min read
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col-md-6 col-lg-4 mb-4 fade-in" style="animation-delay: 0.2s;">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="https://picsum.photos/600/401" class="card-img-top" alt="Blog Post Image">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-success">AI</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Future of AI in Technology</h5>
+                        <p class="card-text">Exploring how artificial intelligence is shaping the future of technology...</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="btn btn-primary read-more" data-bs-toggle="modal" data-bs-target="#postModal2">
+                                <i class="fas fa-arrow-right me-2"></i>Read More
+                            </button>
+                            <small class="text-muted">
+                                <i class="far fa-clock me-1"></i>7 min read
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col-md-6 col-lg-4 mb-4 fade-in" style="animation-delay: 0.4s;">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="https://picsum.photos/600/402" class="card-img-top" alt="Blog Post Image">
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-info">Design</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Responsive Design Best Practices</h5>
+                        <p class="card-text">Master the art of creating beautiful, responsive websites that work on all devices...</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="btn btn-primary read-more" data-bs-toggle="modal" data-bs-target="#postModal3">
+                                <i class="fas fa-arrow-right me-2"></i>Read More
+                            </button>
+                            <small class="text-muted">
+                                <i class="far fa-clock me-1"></i>6 min read
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Modal 1 -->
+    <div class="modal fade" id="postModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Getting Started with Web Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/600/400" class="img-fluid rounded mb-4" alt="Blog Post Image">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://picsum.photos/50/50" class="rounded-circle me-3" alt="Author">
+                        <div>
+                            <h6 class="mb-0">John Doe</h6>
+                            <small class="text-muted">Web Developer</small>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <!-- Comments Section -->
+                    <div class="comments-section mt-4">
+                        <h6 class="mb-4">
+                            <i class="far fa-comments me-2"></i>Comments
+                        </h6>
+                        <div class="comments-list mb-4"></div>
+                        <form id="commentForm1" class="comment-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" placeholder="Your Comment" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>Post Comment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 
